@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button {
+            background: #ee2020;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            animation: .8s ease infinite alternate breathe;
+            transition: background 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+        }
+        
+        button:hover {
+            background: #19483a;
+            border-radius: 20px;
+        }
+        
+        @keyframes breathe {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <h2>Project initialized</h2>
+    <button>Click Me</button>
 </body>
 
 </html>
